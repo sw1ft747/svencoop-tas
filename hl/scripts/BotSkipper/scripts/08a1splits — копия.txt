@@ -1,0 +1,51 @@
+--1
+function SpeedrunStart()
+    ClientCmd( "sc_strafe 1;setvel 0 0 0;sc_strafe_yaw \"\";sc_strafe_type 0;-jump;-duck;setang 0.000000 180.000000 0.000000;sc_im_play hl_c08_a1" );
+    printl("c08a1");
+    CreateTimer( 0.4, ClientCmd, "sc_im_split");
+    CreateTimer( 0.5, ClientCmd, "sc_strafe_yaw 153;setang 0 270 0.000000");
+    CreateTimer( 0.75, ClientCmd, "+duck");
+    CreateTimer( 0.8, ClientCmd, "sc_strafe_yaw \"\";setang 89 270 0");
+    CreateTimer( 0.81, ClientCmd, "-duck;sc_strafe 0;+moveleft");
+    CreateTimer( 1.0, ClientCmd, "-moveleft");
+    CreateTimer( 1.62, ClientCmd, "sc_strafe 1;sc_strafe_yaw 180");
+    CreateTimer( 1.8, ClientCmd, "sc_im_stop");
+end
+
+--2
+function SpeedrunStart()
+    ClientCmd( "sc_strafe 1;setvel 0 0 0;sc_strafe_yaw \"\";sc_strafe_type 0;-jump;-duck;setang 0.000000 180.000000 0.000000;sc_im_play hl_c08_a1" );
+    printl("c08a1");
+    ClientCmd("sc_im_goto 700");
+    CreateTimer( 0.1, ClientCmd, "sc_im_split" );
+    CreateTimer( 0.11, ClientCmd, "sc_strafe 0;+moveright");
+    CreateTimer( 0.12, ClientCmd, "-moveright");
+    CreateTimer( 0.143, ClientCmd, "sc_strafe_yaw -121;sc_strafe 1");
+    CreateTimer( 0.35, ClientCmd, "sc_strafe_yaw \"\";+jump;+duck;setang 15 0 0");
+    CreateTimer( 0.49, ClientCmd, "-duck;sc_strafe_yaw -35");
+    CreateTimer( 1.2, ClientCmd, "sc_strafe_yaw 0");
+    CreateTimer( 1.3, ClientCmd, "+attack;wait;-attack")
+    CreateTimer( 1.5,ClientCmd, "setang 0 -28 0");
+    CreateTimer( 1.6, ClientCmd, "sc_strafe_yaw \"\"");
+end
+
+--3
+function SpeedrunStart()
+    ClientCmd( "sc_strafe 1;setvel 0 0 0;sc_strafe_yaw \"\";sc_strafe_type 0;-jump;-duck;setang 0.000000 180.000000 0.000000;sc_im_play hl_c08_a1" );
+    printl("c08a1");
+    ClientCmd("sc_im_goto 1960");
+    CreateTimer( 0.02, ClientCmd, "sc_im_split;wait;+jump")
+    CreateTimer( 0.19, ClientCmd, "setang 0 -89 0")
+    CreateTimer( 1.12, ClientCmd, "setang 0 -42 0")
+    CreateTimer( 1.9, ClientCmd, "setang 0 0 0")
+    CreateTimer( 2.0, ClientCmd, "-jump;wait;sc_im_stop")
+end
+
+
+
+
+
+
+
+
+
