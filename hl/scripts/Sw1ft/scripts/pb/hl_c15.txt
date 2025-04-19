@@ -1,0 +1,5 @@
+p1_gate1_skip_pb = 12.130000
+p2_gate1_skip_pb = 16.724998
+p1_gate2_skip_pb = 18.845001
+p3_gate1_skip_pb = 11.969999
+p3_gate2_skip_pb = 23.849998
